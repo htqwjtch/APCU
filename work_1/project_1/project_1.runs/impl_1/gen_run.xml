@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1725897770">
+  <File Type="BITSTR-BMM" Name="encoder_d_bd.bmm"/>
   <File Type="ROUTE-PWR" Name="encoder_d_power_routed.rpt"/>
   <File Type="PA-TCL" Name="encoder_d.tcl"/>
-  <File Type="BITSTR-BMM" Name="encoder_d_bd.bmm"/>
+  <File Type="OPT-DCP" Name="encoder_d_opt.dcp"/>
   <File Type="ROUTE-PWR-SUM" Name="encoder_d_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="encoder_d_reports.tcl"/>
-  <File Type="OPT-DCP" Name="encoder_d_opt.dcp"/>
   <File Type="OPT-DRC" Name="encoder_d_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="encoder_d.hwdef"/>
   <File Type="PWROPT-DCP" Name="encoder_d_pwropt.dcp"/>
@@ -25,21 +25,21 @@
   <File Type="ROUTE-BLACKBOX-DCP" Name="encoder_d_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="encoder_d_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="encoder_d_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="encoder_d_drc_routed.rpx"/>
   <File Type="BITSTR-LTX" Name="encoder_d.ltx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="encoder_d_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="encoder_d_drc_routed.rpx"/>
   <File Type="BITSTR-MMI" Name="encoder_d.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="encoder_d_methodology_drc_routed.rpt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="encoder_d_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="encoder_d_methodology_drc_routed.pb"/>
   <File Type="BITSTR-SYSDEF" Name="encoder_d.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="encoder_d_methodology_drc_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="encoder_d_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="encoder_d_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="encoder_d_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="encoder_d_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="encoder_d_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="encoder_d_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-CLK" Name="encoder_d_clock_utilization_routed.rpt"/>
   <File Type="RDI-RDI" Name="encoder_d.vdi"/>
+  <File Type="ROUTE-CLK" Name="encoder_d_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="encoder_d_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="encoder_d_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="encoder_d_bus_skew_routed.rpx"/>

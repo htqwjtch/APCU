@@ -123,12 +123,6 @@ begin
                 else 
                     r_cb <= '1';
                 end if;
-                for i_rck in 0 to 1 loop
-                    if i_rck = 0 then
-                        rck <= '0';
-                    else 
-                        rck <= '1';
-                    end if;
                     for i_cclrb in 0 to 1 loop
                         if i_cclrb = 0 then
                             cclrb <= '0';
@@ -186,8 +180,10 @@ begin
                                                         for i_cck in 0 to 1 loop
                                                             if i_cck = 0 then
                                                                 cck <= '0';
+                                                                rck <= '1';
                                                             else 
                                                                 cck <= '1';
+                                                                rck <='0';
                                                             end if;
                                                             wait for 10 ps;
                                                         end loop;
@@ -198,7 +194,7 @@ begin
                                     end loop;
                                 end loop;
                             end loop;
-                        end loop;
+                       
                     end loop;
                 end loop;
             end loop;

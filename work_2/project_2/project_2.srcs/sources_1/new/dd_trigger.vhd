@@ -34,25 +34,40 @@ use ieee. std_logic_unsigned.all;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity dd_trigger is
-    Port ( d : in STD_LOGIC;
-           clkb : in STD_LOGIC;
-           rb : in STD_LOGIC;
-           q : out STD_LOGIC;
-           qb : out STD_LOGIC);
-end dd_trigger;
+entity jk_trigger is
+    Port( 
+        sb : in std_logic; 
+        j : in std_logic;
+        clk : in std_logic;
+        k : in std_logic;
+        rb : in std_logic;
+        q : out std_logic;
+        qb : out std_logic
+        );
+end jk_trigger;
 
-architecture Behavioral of dd_trigger is
+architecture Behavioral of jk_trigger is
 begin
-    process(clkb, rb)
+    process(clk, sb, rb)
+        variable tmp: std_logic;
     begin
-        if clkb='0' and clkb'event then
-            q<=d;
-            qb<=not d;
+        if clk='1' and clk'EVENT then
+            if j='0' and k='0' then
+                tmp:=tmp;
+            elsif j='0' and k='1' then
+                tmp:='0';
+            elsif j='1' and k='0' then
+                tmp:='1';
+            elsif j='1' and k='1' then
+                tmp:=not tmp;    
+            end if;
         end if;
-        if rb='0' then
-            q<='0';
-            qb<='1';
+        if sb='0' then
+            tmp:='1';
+        elsif rb='0' then
+            tmp:='0';
         end if;
+        q<=tmp;
+        qb<=not tmp;
     end process;    
 end Behavioral;

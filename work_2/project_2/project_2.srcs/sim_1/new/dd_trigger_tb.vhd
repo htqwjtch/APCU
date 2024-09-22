@@ -31,24 +31,28 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity dd_trigger_tb is
+entity jk_trigger_tb is
 --  Port ( );
-end dd_trigger_tb;
+end jk_trigger_tb;
 
-architecture Behavioral of dd_trigger_tb is
-COMPONENT dd_trigger
+architecture Behavioral of jk_trigger_tb is
+COMPONENT jk_trigger
     PORT(
-        d: IN std_logic;
-        clkb: IN std_logic;
-        rb: IN std_logic;
-        q: OUT std_logic;
-        qb: OUT std_logic
+        sb : in std_logic; 
+        j : in std_logic;
+        clk : in std_logic;
+        k : in std_logic;
+        rb : in std_logic;
+        q : out std_logic;
+        qb : out std_logic
         );
     END COMPONENT;
     
     --Inputs
-    signal d: std_logic;
-    signal clkb: std_logic;
+    signal sb: std_logic;
+    signal j: std_logic;
+    signal clk: std_logic;
+    signal k: std_logic;
     signal rb: std_logic;
     
     --Outputs
@@ -57,9 +61,11 @@ COMPONENT dd_trigger
     
 begin
     --Instantiate the Unit Under Test (UUT)
-    uut: dd_trigger PORT MAP(
-        d=>d,
-        clkb=>clkb,
+    uut: jk_trigger PORT MAP(
+        sb=>sb,
+        j=>j,
+        clk=>clk,
+        k=>k,
         rb=>rb,
         
         q=>q,
@@ -73,25 +79,39 @@ begin
         wait for 10 ps;
         
         --insert stimulus here
-        for i_rb in 0 to 1 loop
-            if i_rb = 0 then
-                rb <= '0';
+        for i_sb in 0 to 1 loop
+            if i_sb = 0 then
+                sb <= '0';
             else 
-                rb <= '1';
+                sb <= '1';
             end if;
-            for i_d in 0 to 1 loop
-                if i_d = 0 then
-                    d <= '0';
+            for i_rb in 0 to 1 loop
+                if i_rb = 0 then
+                    rb <= '0';
                 else 
-                    d <= '1';
+                    rb <= '1';
                 end if;
-                for i_clkb in 0 to 1 loop
-                    if i_clkb = 0 then
-                        clkb <= '0';
+                for i_j in 0 to 1 loop
+                    if i_j = 0 then
+                        j <= '0';
                     else 
-                        clkb <= '1';
+                        j <= '1';
                     end if;
-                    wait for 10 ps;
+                    for i_k in 0 to 1 loop
+                        if i_k = 0 then
+                            k <= '0';
+                        else 
+                            k <= '1';
+                        end if;
+                        for i_clk in 0 to 1 loop
+                            if i_clk = 0 then
+                                clk <= '0';
+                            else 
+                                clk <= '1';
+                            end if;
+                            wait for 10 ps;
+                        end loop;
+                    end loop;
                 end loop;
             end loop;
         end loop;

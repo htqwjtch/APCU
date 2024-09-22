@@ -55,21 +55,14 @@ end sn74ls697;
     
 architecture Behavioral of sn74ls697 is
     Component d_trigger 
-    Port ( 
-        d: in std_logic;
-        clkb: in std_logic;
-        qb: out std_logic
-      );
-    end Component;
-    
-    Component dd_trigger 
-    Port ( 
+    Port(
+        sb: in std_logic; 
         d: in std_logic;
         clkb: in std_logic;
         rb: in std_logic;
         q: out std_logic;
         qb: out std_logic
-          );
+      );
     end Component;
     
     signal not_gb: std_logic;
@@ -123,6 +116,7 @@ architecture Behavioral of sn74ls697 is
     
     signal and_not: std_logic;
     
+    signal zero: std_logic:='0';
     signal rb: std_logic;
     signal clkb1: std_logic;
     signal clkb2: std_logic;
@@ -194,53 +188,65 @@ begin
     or_not11<=not (or_not3 or and13 or and14);
     or_not12<=not (or_not4 or and15 or and16);
     
-    dd1: dd_trigger Port Map (
-        d =>or_not9,
-        clkb =>clkb1,
-        rb => rb,
-        q =>qdd1,
-        qb =>qbdd1 
+    c1: d_trigger Port Map (
+        sb=>zero,
+        d=>or_not9,
+        clkb=>clkb1,
+        rb=>rb,
+        q=>qdd1,
+        qb=>qbdd1 
     );         
-    dd2: dd_trigger Port Map (
+    c2: d_trigger Port Map (
+        sb=>zero,
         d =>or_not10,
-        clkb =>clkb1,
+        clkb=>clkb1,
         rb =>rb,
         q =>qdd2,
         qb =>qbdd2 
     );         
-    dd3: dd_trigger Port Map (
-        d =>or_not11,
+    c3: d_trigger Port Map (
+        sb=>zero,
+        d=>or_not11,
         clkb =>clkb1,
         rb =>rb,
         q =>qdd3,
         qb =>qbdd3 
     );          
-    dd4: dd_trigger Port Map (
+    c4: d_trigger Port Map (
+        sb=>zero,
         d =>or_not12,
         clkb =>clkb1,
         rb =>rb,
         q =>qdd4,
         qb =>qbdd4 
     );       
-    d1: d_trigger Port Map (
-        d => qdd1,
-        clkb =>clkb2,
-        qb => qbd1
+    r1: d_trigger Port Map (
+        sb=>zero,
+        d=>qdd1,
+        clkb=>clkb2,
+        rb=>zero,
+        qb=>qbd1
     );       
-    d2: d_trigger Port Map (
-        d => qdd2,
+    r2: d_trigger Port Map (
+        sb=>zero,
+        d=>qdd2,
         clkb =>clkb2,
-        qb =>qbd2 
+        rb=>zero,
+        qb=>qbd2 
     );       
-    d3: d_trigger Port Map (
-        d => qdd3,
+    r3: d_trigger Port Map (
+        sb=>zero,
+        d=>qdd3,
         clkb =>clkb2,
+        rb=>zero,
         qb => qbd3
     );        
-    d4: d_trigger Port Map (
+    r4: d_trigger Port Map (
+        sb=>zero,
         d => qdd4,
         clkb =>clkb2,
-        qb => qbd4
+        rb=>zero,
+        qb=>qbd4
     );  
     
      and17<=r_cb and qbd1;

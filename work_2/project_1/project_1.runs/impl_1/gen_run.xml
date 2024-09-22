@@ -39,6 +39,7 @@
   <File Type="ROUTE-TIMING-PB" Name="d_trigger_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="d_trigger_timing_summary_routed.rpx"/>
   <File Type="ROUTE-CLK" Name="d_trigger_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="d_trigger.vdi"/>
   <File Type="ROUTE-BUS-SKEW" Name="d_trigger_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="d_trigger_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="d_trigger_bus_skew_routed.rpx"/>
@@ -48,7 +49,6 @@
   <File Type="BITSTR-RBT" Name="d_trigger.rbt"/>
   <File Type="BITSTR-NKY" Name="d_trigger.nky"/>
   <File Type="BG-DRC" Name="d_trigger.drc"/>
-  <File Type="RDI-RDI" Name="d_trigger.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>

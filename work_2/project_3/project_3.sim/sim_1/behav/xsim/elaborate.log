@@ -12,7 +12,7 @@ Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.std_logic_arith
 Compiling package ieee.std_logic_unsigned
-Compiling architecture behavioral of entity xil_defaultlib.dd_trigger [dd_trigger_default]
+Compiling architecture behavioral of entity xil_defaultlib.jk_trigger [jk_trigger_default]
 Compiling architecture behavioral of entity xil_defaultlib.d_trigger [d_trigger_default]
 Compiling architecture behavioral of entity xil_defaultlib.sn74ls697 [sn74ls697_default]
 Compiling architecture behavioral of entity xil_defaultlib.sn74ls697_tb

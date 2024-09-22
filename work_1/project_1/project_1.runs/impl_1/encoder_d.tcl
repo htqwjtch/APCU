@@ -68,11 +68,11 @@ set rc [catch {
   create_project -in_memory -part xc7k70tfbv676-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/htqwj/APCU/project_1/project_1.cache/wt [current_project]
-  set_property parent.project_path C:/Users/htqwj/APCU/project_1/project_1.xpr [current_project]
-  set_property ip_output_repo C:/Users/htqwj/APCU/project_1/project_1.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/htqwj/APCU/work_1/project_1/project_1.cache/wt [current_project]
+  set_property parent.project_path C:/Users/htqwj/APCU/work_1/project_1/project_1.xpr [current_project]
+  set_property ip_output_repo C:/Users/htqwj/APCU/work_1/project_1/project_1.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/htqwj/APCU/project_1/project_1.runs/synth_1/encoder_d.dcp
+  add_files -quiet C:/Users/htqwj/APCU/work_1/project_1/project_1.runs/synth_1/encoder_d.dcp
   link_design -top encoder_d -part xc7k70tfbv676-1
   close_msg_db -file init_design.pb
 } RESULT]

@@ -80,20 +80,20 @@ begin
     and_3 <= (not X5) and X6 and and_0;
     and_4 <= (not X7) and and_0;
     
-    Y0 <= not (and_1 or and_2 or and_3 or and_4);-- or and_0);
+    Y0 <= 'Z' when and_0='0' else  not (and_1 or and_2 or and_3 or and_4);
     
     and_5 <= (not X2) and X4 and X5 and and_0;
     and_6 <= (not X3) and X4 and X5 and and_0;
     and_7 <= (not X6) and and_0;
     and_8 <= (not X7) and and_0;
     
-    Y1 <= not (and_5 or and_6 or and_7 or and_8);-- or and_0);
+    Y1 <= 'Z' when and_0='0' else not (and_5 or and_6 or and_7 or and_8);
     
     and_9 <= (not X4) and and_0;
     and_10 <= (not X5) and and_0;
     and_11 <= (not X6) and and_0;
     and_12 <= (not X7) and and_0;
     
-    Y2 <= not (and_9 or and_10 or and_11 or and_12);-- or and_0);
+    Y2 <= 'Z' when and_0='0' else not (and_9 or and_10 or and_11 or and_12);
 
 end logic_operators;

@@ -38,25 +38,34 @@ end d_trigger_tb;
 architecture Behavioral of d_trigger_tb is
 COMPONENT d_trigger
     PORT(
+        sb: in std_logic;
         d: IN std_logic;
         clkb: IN std_logic;
+        rb: in std_logic;
+        q: OUT std_logic;
         qb: OUT std_logic
         );
     END COMPONENT;
     
     --Inputs
+    signal sb: std_logic;
     signal d: std_logic;
     signal clkb: std_logic;
+    signal rb: std_logic;
     
     --Outputs
+    signal q: std_logic;
     signal qb: std_logic;
     
 begin
     --Instantiate the Unit Under Test (UUT)
     uut: d_trigger PORT MAP(
+        sb=>sb,
         d=>d,
         clkb=>clkb,
+        rb=>rb,
         
+        q=>q,
         qb=>qb
     );
     
@@ -67,20 +76,34 @@ begin
         wait for 10 ps;
         
         --insert stimulus here
-        for i_d in 0 to 2 loop
-            if i_d = 0 then
-                d <= '0';
+        for i_sb in 0 to 1 loop
+            if i_sb = 0 then
+                sb <= '0';
             else 
-                d <= '1';
+                sb <= '1';
             end if;
-            for i_clkb in 0 to 1 loop
-                if i_clkb = 0 then
-                    clkb <= '0';
+            for i_rb in 0 to 1 loop
+                if i_rb = 0 then
+                    rb <= '0';
                 else 
-                    clkb <= '1';
+                    rb <= '1';
                 end if;
-                wait for 10 ps;
-            end loop;
+                for i_d in 0 to 1 loop
+                    if i_d = 0 then
+                        d <= '0';
+                    else 
+                        d <= '1';
+                    end if;
+                        for i_clkb in 0 to 1 loop
+                            if i_clkb = 0 then
+                                clkb <= '0';
+                            else 
+                                clkb <= '1';
+                            end if;
+                            wait for 10 ps;
+                        end loop;
+                end loop;
+            end loop;    
         end loop;
         wait;
     end process;

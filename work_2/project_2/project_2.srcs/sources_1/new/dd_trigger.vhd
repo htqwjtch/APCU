@@ -62,10 +62,10 @@ begin
                 tmp:=not tmp;    
             end if;
         end if;
-        if sb='0' then
-            tmp:='1';
-        elsif rb='0' then
+        if rb='0' then
             tmp:='0';
+        elsif sb='0' then
+            tmp:='1';
         end if;
         q<=tmp;
         qb<=not tmp;

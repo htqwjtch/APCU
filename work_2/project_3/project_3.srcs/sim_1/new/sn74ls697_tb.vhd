@@ -114,14 +114,20 @@ begin
         for i_gb in 0 to 1 loop
             if i_gb = 0 then
                 gb <= '0';
+                enpb <= '0';
+                entb <= '0';
             else 
                 gb <= '1';
+                enpb <= '1';
+                entb <= '1';
             end if;
             for i_r_cb in 0 to 1 loop
                 if i_r_cb = 0 then
                     r_cb <= '0';
+                    
                 else 
                     r_cb <= '1';
+                    
                 end if;
                     for i_cclrb in 0 to 1 loop
                         if i_cclrb = 0 then
@@ -141,41 +147,30 @@ begin
                                 else 
                                     loadb <= '1';
                                 end if;
-                                for i_enpb in 0 to 1 loop
-                                    if i_enpb = 0 then
-                                        enpb <= '0';
-                                    else 
-                                        enpb <= '1';
-                                    end if;
-                                    for i_entb in 0 to 1 loop
-                                        if i_entb = 0 then
-                                            entb <= '0';
-                                        else 
-                                            entb <= '1';
-                                        end if;
-                                        for i_xa in 0 to 1 loop
-                                            if i_xa = 0 then
-                                                xa <= '0';
+                                
+                                        for i_xd in 0 to 1 loop
+                                            if i_xd = 0 then
+                                                xd <= '0';
                                             else 
-                                                xa <= '1';
+                                                xd <= '1';
                                             end if;
-                                            for i_xb in 0 to 1 loop
-                                                if i_xb = 0 then
-                                                    xb <= '0';
+                                            for i_xc in 0 to 1 loop
+                                                if i_xc = 0 then
+                                                    xc <= '0';
                                                 else 
-                                                    xb <= '1';
+                                                    xc <= '1';
                                                 end if;
-                                                for i_xc in 0 to 1 loop
-                                                    if i_xc = 0 then
-                                                        xc <= '0';
+                                                for i_xb in 0 to 1 loop
+                                                    if i_xb = 0 then
+                                                        xb <= '0';
                                                     else 
-                                                        xc <= '1';
+                                                        xb <= '1';
                                                     end if;
-                                                    for i_xd in 0 to 1 loop
-                                                        if i_xd = 0 then
-                                                            xd <= '0';
+                                                    for i_xa in 0 to 1 loop
+                                                        if i_xa = 0 then
+                                                            xa <= '0';
                                                         else 
-                                                            xd <= '1';
+                                                            xa <= '1';
                                                         end if;
                                                         for i_cck in 0 to 1 loop
                                                             if i_cck = 0 then
@@ -190,11 +185,8 @@ begin
                                                     end loop;
                                                 end loop;
                                             end loop;
-                                        end loop;
-                                    end loop;
                                 end loop;
                             end loop;
-                       
                     end loop;
                 end loop;
             end loop;

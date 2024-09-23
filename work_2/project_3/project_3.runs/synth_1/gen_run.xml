@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1726920219">
+<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1727104764">
   <File Type="PA-TCL" Name="sn74ls697.tcl"/>
   <File Type="REPORTS-TCL" Name="sn74ls697_reports.tcl"/>
   <File Type="RDS-RDS" Name="sn74ls697.vds"/>

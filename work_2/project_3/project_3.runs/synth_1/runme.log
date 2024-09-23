@@ -14,45 +14,43 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 10024 
+INFO: Helper process launched with PID 1888 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 356.492 ; gain = 99.426
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 356.305 ; gain = 99.500
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'sn74ls697' [C:/Users/htqwj/APCU/work_2/project_3/project_3.srcs/sources_1/new/sn74ls697.vhd:56]
-INFO: [Synth 8-3491] module 'dd_trigger' declared at 'C:/Users/htqwj/APCU/work_2/project_2/project_2.srcs/sources_1/new/dd_trigger.vhd:37' bound to instance 'dd1' of component 'dd_trigger' [C:/Users/htqwj/APCU/work_2/project_3/project_3.srcs/sources_1/new/sn74ls697.vhd:203]
-INFO: [Synth 8-638] synthesizing module 'dd_trigger' [C:/Users/htqwj/APCU/work_2/project_2/project_2.srcs/sources_1/new/dd_trigger.vhd:46]
-INFO: [Synth 8-256] done synthesizing module 'dd_trigger' (1#1) [C:/Users/htqwj/APCU/work_2/project_2/project_2.srcs/sources_1/new/dd_trigger.vhd:46]
-INFO: [Synth 8-3491] module 'dd_trigger' declared at 'C:/Users/htqwj/APCU/work_2/project_2/project_2.srcs/sources_1/new/dd_trigger.vhd:37' bound to instance 'dd2' of component 'dd_trigger' [C:/Users/htqwj/APCU/work_2/project_3/project_3.srcs/sources_1/new/sn74ls697.vhd:211]
-INFO: [Synth 8-3491] module 'dd_trigger' declared at 'C:/Users/htqwj/APCU/work_2/project_2/project_2.srcs/sources_1/new/dd_trigger.vhd:37' bound to instance 'dd3' of component 'dd_trigger' [C:/Users/htqwj/APCU/work_2/project_3/project_3.srcs/sources_1/new/sn74ls697.vhd:219]
-INFO: [Synth 8-3491] module 'dd_trigger' declared at 'C:/Users/htqwj/APCU/work_2/project_2/project_2.srcs/sources_1/new/dd_trigger.vhd:37' bound to instance 'dd4' of component 'dd_trigger' [C:/Users/htqwj/APCU/work_2/project_3/project_3.srcs/sources_1/new/sn74ls697.vhd:227]
-INFO: [Synth 8-3491] module 'd_trigger' declared at 'C:/Users/htqwj/APCU/work_2/project_1/project_1.srcs/sources_1/new/d_trigger.vhd:37' bound to instance 'd1' of component 'd_trigger' [C:/Users/htqwj/APCU/work_2/project_3/project_3.srcs/sources_1/new/sn74ls697.vhd:235]
-INFO: [Synth 8-638] synthesizing module 'd_trigger' [C:/Users/htqwj/APCU/work_2/project_1/project_1.srcs/sources_1/new/d_trigger.vhd:45]
-WARNING: [Synth 8-3848] Net q in module/entity d_trigger does not have driver. [C:/Users/htqwj/APCU/work_2/project_1/project_1.srcs/sources_1/new/d_trigger.vhd:41]
-INFO: [Synth 8-256] done synthesizing module 'd_trigger' (2#1) [C:/Users/htqwj/APCU/work_2/project_1/project_1.srcs/sources_1/new/d_trigger.vhd:45]
-INFO: [Synth 8-3491] module 'd_trigger' declared at 'C:/Users/htqwj/APCU/work_2/project_1/project_1.srcs/sources_1/new/d_trigger.vhd:37' bound to instance 'd2' of component 'd_trigger' [C:/Users/htqwj/APCU/work_2/project_3/project_3.srcs/sources_1/new/sn74ls697.vhd:242]
-INFO: [Synth 8-3491] module 'd_trigger' declared at 'C:/Users/htqwj/APCU/work_2/project_1/project_1.srcs/sources_1/new/d_trigger.vhd:37' bound to instance 'd3' of component 'd_trigger' [C:/Users/htqwj/APCU/work_2/project_3/project_3.srcs/sources_1/new/sn74ls697.vhd:249]
-INFO: [Synth 8-3491] module 'd_trigger' declared at 'C:/Users/htqwj/APCU/work_2/project_1/project_1.srcs/sources_1/new/d_trigger.vhd:37' bound to instance 'd4' of component 'd_trigger' [C:/Users/htqwj/APCU/work_2/project_3/project_3.srcs/sources_1/new/sn74ls697.vhd:256]
-WARNING: [Synth 8-3848] Net k in module/entity sn74ls697 does not have driver. [C:/Users/htqwj/APCU/work_2/project_3/project_3.srcs/sources_1/new/sn74ls697.vhd:78]
+INFO: [Synth 8-3491] module 'd_trigger' declared at 'C:/Users/htqwj/APCU/work_2/project_1/project_1.srcs/sources_1/new/d_trigger.vhd:37' bound to instance 'c1' of component 'd_trigger' [C:/Users/htqwj/APCU/work_2/project_3/project_3.srcs/sources_1/new/sn74ls697.vhd:189]
+INFO: [Synth 8-638] synthesizing module 'd_trigger' [C:/Users/htqwj/APCU/work_2/project_1/project_1.srcs/sources_1/new/d_trigger.vhd:48]
+INFO: [Synth 8-3491] module 'jk_trigger' declared at 'C:/Users/htqwj/APCU/work_2/project_2/project_2.srcs/sources_1/new/dd_trigger.vhd:37' bound to instance 'd_tr' of component 'jk_trigger' [C:/Users/htqwj/APCU/work_2/project_1/project_1.srcs/sources_1/new/d_trigger.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'jk_trigger' [C:/Users/htqwj/APCU/work_2/project_2/project_2.srcs/sources_1/new/dd_trigger.vhd:49]
+INFO: [Synth 8-5837] Detected dual asynchronous set and preset for register tmp_reg in module jk_trigger. This is not a recommended register style for Xilinx devices  [C:/Users/htqwj/APCU/work_2/project_2/project_2.srcs/sources_1/new/dd_trigger.vhd:56]
+INFO: [Synth 8-256] done synthesizing module 'jk_trigger' (1#1) [C:/Users/htqwj/APCU/work_2/project_2/project_2.srcs/sources_1/new/dd_trigger.vhd:49]
+INFO: [Synth 8-5837] Detected dual asynchronous set and preset for register tmp_reg in module d_trigger. This is not a recommended register style for Xilinx devices  [C:/Users/htqwj/APCU/work_2/project_1/project_1.srcs/sources_1/new/d_trigger.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'd_trigger' (2#1) [C:/Users/htqwj/APCU/work_2/project_1/project_1.srcs/sources_1/new/d_trigger.vhd:48]
+INFO: [Synth 8-3491] module 'd_trigger' declared at 'C:/Users/htqwj/APCU/work_2/project_1/project_1.srcs/sources_1/new/d_trigger.vhd:37' bound to instance 'c2' of component 'd_trigger' [C:/Users/htqwj/APCU/work_2/project_3/project_3.srcs/sources_1/new/sn74ls697.vhd:197]
+INFO: [Synth 8-3491] module 'd_trigger' declared at 'C:/Users/htqwj/APCU/work_2/project_1/project_1.srcs/sources_1/new/d_trigger.vhd:37' bound to instance 'c3' of component 'd_trigger' [C:/Users/htqwj/APCU/work_2/project_3/project_3.srcs/sources_1/new/sn74ls697.vhd:205]
+INFO: [Synth 8-3491] module 'd_trigger' declared at 'C:/Users/htqwj/APCU/work_2/project_1/project_1.srcs/sources_1/new/d_trigger.vhd:37' bound to instance 'c4' of component 'd_trigger' [C:/Users/htqwj/APCU/work_2/project_3/project_3.srcs/sources_1/new/sn74ls697.vhd:213]
+INFO: [Synth 8-3491] module 'd_trigger' declared at 'C:/Users/htqwj/APCU/work_2/project_1/project_1.srcs/sources_1/new/d_trigger.vhd:37' bound to instance 'r1' of component 'd_trigger' [C:/Users/htqwj/APCU/work_2/project_3/project_3.srcs/sources_1/new/sn74ls697.vhd:221]
+INFO: [Synth 8-3491] module 'd_trigger' declared at 'C:/Users/htqwj/APCU/work_2/project_1/project_1.srcs/sources_1/new/d_trigger.vhd:37' bound to instance 'r2' of component 'd_trigger' [C:/Users/htqwj/APCU/work_2/project_3/project_3.srcs/sources_1/new/sn74ls697.vhd:228]
+INFO: [Synth 8-3491] module 'd_trigger' declared at 'C:/Users/htqwj/APCU/work_2/project_1/project_1.srcs/sources_1/new/d_trigger.vhd:37' bound to instance 'r3' of component 'd_trigger' [C:/Users/htqwj/APCU/work_2/project_3/project_3.srcs/sources_1/new/sn74ls697.vhd:235]
+INFO: [Synth 8-3491] module 'd_trigger' declared at 'C:/Users/htqwj/APCU/work_2/project_1/project_1.srcs/sources_1/new/d_trigger.vhd:37' bound to instance 'r4' of component 'd_trigger' [C:/Users/htqwj/APCU/work_2/project_3/project_3.srcs/sources_1/new/sn74ls697.vhd:242]
 INFO: [Synth 8-256] done synthesizing module 'sn74ls697' (3#1) [C:/Users/htqwj/APCU/work_2/project_3/project_3.srcs/sources_1/new/sn74ls697.vhd:56]
-WARNING: [Synth 8-3331] design d_trigger has unconnected port q
-WARNING: [Synth 8-3331] design d_trigger has unconnected port k
-WARNING: [Synth 8-3331] design dd_trigger has unconnected port k
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 411.645 ; gain = 154.578
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 411.648 ; gain = 154.844
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 411.645 ; gain = 154.578
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 411.648 ; gain = 154.844
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k70tfbv676-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 411.645 ; gain = 154.578
----------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 411.648 ; gain = 154.844
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 411.645 ; gain = 154.578
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 411.648 ; gain = 154.844
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -66,7 +64,9 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Registers : 
-	                1 Bit    Registers := 12    
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 24    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -74,14 +74,12 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
-Module dd_trigger 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 2     
-Module d_trigger 
+Module jk_trigger 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -99,8 +97,32 @@ No constraint files found.
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'c1/d_tr/tmp_reg/Q' [C:/Users/htqwj/APCU/work_2/project_2/project_2.srcs/sources_1/new/dd_trigger.vhd:56]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'VCC' [C:/Users/htqwj/APCU/work_2/project_2/project_2.srcs/sources_1/new/dd_trigger.vhd:56]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/htqwj/APCU/work_2/project_2/project_2.srcs/sources_1/new/dd_trigger.vhd:56]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'c2/d_tr/tmp_reg/Q' [C:/Users/htqwj/APCU/work_2/project_2/project_2.srcs/sources_1/new/dd_trigger.vhd:56]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'VCC' [C:/Users/htqwj/APCU/work_2/project_2/project_2.srcs/sources_1/new/dd_trigger.vhd:56]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/htqwj/APCU/work_2/project_2/project_2.srcs/sources_1/new/dd_trigger.vhd:56]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'c3/d_tr/tmp_reg/Q' [C:/Users/htqwj/APCU/work_2/project_2/project_2.srcs/sources_1/new/dd_trigger.vhd:56]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'VCC' [C:/Users/htqwj/APCU/work_2/project_2/project_2.srcs/sources_1/new/dd_trigger.vhd:56]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/htqwj/APCU/work_2/project_2/project_2.srcs/sources_1/new/dd_trigger.vhd:56]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'c4/d_tr/tmp_reg/Q' [C:/Users/htqwj/APCU/work_2/project_2/project_2.srcs/sources_1/new/dd_trigger.vhd:56]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'VCC' [C:/Users/htqwj/APCU/work_2/project_2/project_2.srcs/sources_1/new/dd_trigger.vhd:56]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/htqwj/APCU/work_2/project_2/project_2.srcs/sources_1/new/dd_trigger.vhd:56]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'r1/d_tr/tmp_reg/Q' [C:/Users/htqwj/APCU/work_2/project_2/project_2.srcs/sources_1/new/dd_trigger.vhd:56]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'VCC' [C:/Users/htqwj/APCU/work_2/project_2/project_2.srcs/sources_1/new/dd_trigger.vhd:56]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/htqwj/APCU/work_2/project_2/project_2.srcs/sources_1/new/dd_trigger.vhd:56]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'r2/d_tr/tmp_reg/Q' [C:/Users/htqwj/APCU/work_2/project_2/project_2.srcs/sources_1/new/dd_trigger.vhd:56]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'VCC' [C:/Users/htqwj/APCU/work_2/project_2/project_2.srcs/sources_1/new/dd_trigger.vhd:56]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/htqwj/APCU/work_2/project_2/project_2.srcs/sources_1/new/dd_trigger.vhd:56]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'r3/d_tr/tmp_reg/Q' [C:/Users/htqwj/APCU/work_2/project_2/project_2.srcs/sources_1/new/dd_trigger.vhd:56]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'VCC' [C:/Users/htqwj/APCU/work_2/project_2/project_2.srcs/sources_1/new/dd_trigger.vhd:56]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/htqwj/APCU/work_2/project_2/project_2.srcs/sources_1/new/dd_trigger.vhd:56]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'r4/d_tr/tmp_reg/Q' [C:/Users/htqwj/APCU/work_2/project_2/project_2.srcs/sources_1/new/dd_trigger.vhd:56]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'VCC' [C:/Users/htqwj/APCU/work_2/project_2/project_2.srcs/sources_1/new/dd_trigger.vhd:56]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/htqwj/APCU/work_2/project_2/project_2.srcs/sources_1/new/dd_trigger.vhd:56]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 541.438 ; gain = 284.371
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 541.719 ; gain = 284.914
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -113,7 +135,7 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 541.438 ; gain = 284.371
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 541.719 ; gain = 284.914
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -125,7 +147,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 541.438 ; gain = 284.371
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 541.719 ; gain = 284.914
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -149,7 +171,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 541.438 ; gain = 284.371
+Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 541.719 ; gain = 284.914
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -162,7 +184,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 541.438 ; gain = 284.371
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 541.719 ; gain = 284.914
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -174,25 +196,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 541.438 ; gain = 284.371
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 541.719 ; gain = 284.914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 541.438 ; gain = 284.371
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 541.719 ; gain = 284.914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 541.438 ; gain = 284.371
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 541.719 ; gain = 284.914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 541.438 ; gain = 284.371
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 541.719 ; gain = 284.914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -208,41 +230,26 @@ Report Cell Usage:
 +------+------+------+
 |      |Cell  |Count |
 +------+------+------+
-|1     |BUFG  |     2|
-|2     |LUT1  |     7|
-|3     |LUT3  |     5|
-|4     |LUT5  |     3|
-|5     |LUT6  |     9|
-|6     |FDCE  |     4|
-|7     |FDPE  |     4|
-|8     |FDRE  |     4|
-|9     |IBUF  |    13|
-|10    |OBUF  |     1|
-|11    |OBUFT |     4|
+|1     |LUT2  |     1|
+|2     |IBUF  |     3|
+|3     |OBUF  |     1|
+|4     |OBUFT |     4|
 +------+------+------+
 
 Report Instance Areas: 
-+------+---------+-------------+------+
-|      |Instance |Module       |Cells |
-+------+---------+-------------+------+
-|1     |top      |             |    56|
-|2     |  d1     |d_trigger    |     2|
-|3     |  d2     |d_trigger_0  |     2|
-|4     |  d3     |d_trigger_1  |     2|
-|5     |  d4     |d_trigger_2  |     2|
-|6     |  dd1    |dd_trigger   |     7|
-|7     |  dd2    |dd_trigger_3 |     7|
-|8     |  dd3    |dd_trigger_4 |     6|
-|9     |  dd4    |dd_trigger_5 |     6|
-+------+---------+-------------+------+
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     9|
++------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 541.438 ; gain = 284.371
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 541.719 ; gain = 284.914
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 541.438 ; gain = 284.371
-Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 541.438 ; gain = 284.371
+Synthesis finished with 0 errors, 24 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 541.719 ; gain = 284.914
+Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 541.719 ; gain = 284.914
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -250,11 +257,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-23 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+26 Infos, 0 Warnings, 24 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 643.191 ; gain = 399.582
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 651.230 ; gain = 407.469
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/htqwj/APCU/work_2/project_3/project_3.runs/synth_1/sn74ls697.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file sn74ls697_utilization_synth.rpt -pb sn74ls697_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 643.191 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Sep 21 15:03:59 2024...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 651.230 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 23 18:19:53 2024...

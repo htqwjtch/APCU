@@ -116,8 +116,7 @@ architecture Behavioral of sn74ls697 is
     
     signal and_not: std_logic;
     
-    signal zero: std_logic:='0';
-    signal rb: std_logic;
+    signal zero: std_logic:='Z';
     signal clkb1: std_logic;
     signal clkb2: std_logic;
     
@@ -143,7 +142,6 @@ architecture Behavioral of sn74ls697 is
 begin
     not_gb<= not gb;
 
-    rb <= cclrb;
     clkb1 <=not cck;
     clkb2 <=not rck;
     
@@ -192,7 +190,7 @@ begin
         sb=>zero,
         d=>or_not9,
         clkb=>clkb1,
-        rb=>rb,
+        rb=>cclrb,
         q=>qdd1,
         qb=>qbdd1 
     );         
@@ -200,7 +198,7 @@ begin
         sb=>zero,
         d =>or_not10,
         clkb=>clkb1,
-        rb =>rb,
+        rb =>cclrb,
         q =>qdd2,
         qb =>qbdd2 
     );         
@@ -208,7 +206,7 @@ begin
         sb=>zero,
         d=>or_not11,
         clkb =>clkb1,
-        rb =>rb,
+        rb =>cclrb,
         q =>qdd3,
         qb =>qbdd3 
     );          
@@ -216,7 +214,7 @@ begin
         sb=>zero,
         d =>or_not12,
         clkb =>clkb1,
-        rb =>rb,
+        rb =>cclrb,
         q =>qdd4,
         qb =>qbdd4 
     );       

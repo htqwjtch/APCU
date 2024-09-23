@@ -79,9 +79,9 @@ begin
         if clkb='0' and clkb'EVENT then
             tmp:=d;
         end if;
-        if rb='1' then
+        if rb='0' then
             tmp:='0';
-        elsif sb='1' then
+        elsif sb='0' then
             tmp:='1';  
         end if;
         q<=tmp;

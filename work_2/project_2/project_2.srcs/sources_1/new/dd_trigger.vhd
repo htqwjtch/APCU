@@ -51,7 +51,11 @@ begin
     process(clk, sb, rb)
         variable tmp: std_logic;
     begin
-        if clk='1' and clk'EVENT then
+         if rb='0' then
+               tmp:='0';
+           elsif sb='0' then
+               tmp:='1';
+        elsif clk='1' and clk'EVENT then
             if j='0' and k='0' then
                 tmp:=tmp;
             elsif j='0' and k='1' then
@@ -61,11 +65,6 @@ begin
             elsif j='1' and k='1' then
                 tmp:=not tmp;    
             end if;
-        end if;
-        if rb='0' then
-            tmp:='0';
-        elsif sb='0' then
-            tmp:='1';
         end if;
         q<=tmp;
         qb<=not tmp;

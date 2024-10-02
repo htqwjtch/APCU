@@ -52,7 +52,7 @@ end encoder_d;
 architecture sequential_operators of encoder_d is
 
 begin
-    process
+    process(E1, X0, X1, X2, X3, X4, X5, X6, X7)
     begin
         if E1 = '0' then
             if (X0 = '1' AND X1 = '1' AND X2 = '1' AND X3 = '1' AND X4 = '1'AND X5 = '1' AND X6 = '1' AND X7 = '1') then
@@ -118,7 +118,7 @@ begin
                 Y1 <= '1';
                 Y2 <= '1';
             end if;
-        else
+        elsif E1 = '1' then
             EO <= '1';
             GS <= '1';
             Y0 <= 'Z';

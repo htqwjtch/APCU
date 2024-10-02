@@ -14,30 +14,29 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 4848 
+INFO: Helper process launched with PID 6084 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 355.828 ; gain = 98.969
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 355.637 ; gain = 98.922
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'd_trigger' [C:/Users/htqwj/APCU/work_2/project_1/project_1.srcs/sources_1/new/d_trigger.vhd:48]
-INFO: [Synth 8-637] synthesizing blackbox instance 'd_tr' of component 'jk_trigger' [C:/Users/htqwj/APCU/work_2/project_1/project_1.srcs/sources_1/new/d_trigger.vhd:67]
-INFO: [Synth 8-5837] Detected dual asynchronous set and preset for register tmp_reg in module d_trigger. This is not a recommended register style for Xilinx devices  [C:/Users/htqwj/APCU/work_2/project_1/project_1.srcs/sources_1/new/d_trigger.vhd:80]
+INFO: [Synth 8-637] synthesizing blackbox instance 'd_tr' of component 'jk_trigger' [C:/Users/htqwj/APCU/work_2/project_1/project_1.srcs/sources_1/new/d_trigger.vhd:69]
 INFO: [Synth 8-256] done synthesizing module 'd_trigger' (1#1) [C:/Users/htqwj/APCU/work_2/project_1/project_1.srcs/sources_1/new/d_trigger.vhd:48]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 411.160 ; gain = 154.301
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 410.953 ; gain = 154.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 411.160 ; gain = 154.301
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 410.953 ; gain = 154.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k70tfbv676-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 411.160 ; gain = 154.301
----------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 410.953 ; gain = 154.238
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 411.160 ; gain = 154.301
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 410.953 ; gain = 154.238
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -50,8 +49,6 @@ No constraint files found.
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -59,10 +56,6 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
-Module d_trigger 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -81,7 +74,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 531.188 ; gain = 274.328
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 530.754 ; gain = 274.039
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -94,7 +87,7 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 531.188 ; gain = 274.328
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 530.754 ; gain = 274.039
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -106,7 +99,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 531.188 ; gain = 274.328
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 530.754 ; gain = 274.039
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -130,24 +123,20 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 531.188 ; gain = 274.328
+Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 530.754 ; gain = 274.039
 ---------------------------------------------------------------------------------
-CRITICAL WARNING: [Synth 8-3352] multi-driven net qb_OBUF with 1st driver pin 'd_tr/qb' [C:/Users/htqwj/APCU/work_2/project_1/project_1.srcs/sources_1/new/d_trigger.vhd:67]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net qb_OBUF with 2nd driver pin 'i_2/O' [C:/Users/htqwj/APCU/work_2/project_1/project_1.srcs/sources_1/new/d_trigger.vhd:88]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net q_OBUF with 1st driver pin 'i_5/O' [C:/Users/htqwj/APCU/work_2/project_1/project_1.srcs/sources_1/new/d_trigger.vhd:37]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net q_OBUF with 2nd driver pin 'd_tr/q' [C:/Users/htqwj/APCU/work_2/project_1/project_1.srcs/sources_1/new/d_trigger.vhd:67]
 
 Report Check Netlist: 
 +------+------------------+-------+---------+-------+------------------+
 |      |Item              |Errors |Warnings |Status |Description       |
 +------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        2|Failed |Multi driven nets |
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 531.188 ; gain = 274.328
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 530.754 ; gain = 274.039
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -159,25 +148,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 531.188 ; gain = 274.328
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 530.754 ; gain = 274.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 531.188 ; gain = 274.328
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 530.754 ; gain = 274.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 531.188 ; gain = 274.328
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 530.754 ; gain = 274.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 531.188 ; gain = 274.328
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 530.754 ; gain = 274.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -195,43 +184,37 @@ Report Cell Usage:
 |      |Cell              |Count |
 +------+------------------+------+
 |1     |jk_trigger_bbox_0 |     1|
-|2     |BUFG              |     2|
-|3     |LUT1              |     5|
-|4     |LUT3              |     1|
-|5     |FDCE              |     1|
-|6     |FDPE              |     1|
-|7     |LDC               |     1|
-|8     |IBUF              |     4|
-|9     |OBUF              |     2|
+|2     |LUT1              |     2|
+|3     |IBUF              |     4|
+|4     |OBUF              |     2|
 +------+------------------+------+
 
 Report Instance Areas: 
 +------+---------+-------+------+
 |      |Instance |Module |Cells |
 +------+---------+-------+------+
-|1     |top      |       |    19|
+|1     |top      |       |    10|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 531.188 ; gain = 274.328
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 530.754 ; gain = 274.039
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 4 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 531.188 ; gain = 274.328
-Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 531.188 ; gain = 274.328
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 530.754 ; gain = 274.039
+Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 530.754 ; gain = 274.039
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 1 instances were transformed.
-  LDC => LDCE (inverted pins: G): 1 instances
+No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-13 Infos, 0 Warnings, 4 Critical Warnings and 0 Errors encountered.
+12 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 639.824 ; gain = 395.852
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 637.938 ; gain = 394.422
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/htqwj/APCU/work_2/project_1/project_1.runs/synth_1/d_trigger.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file d_trigger_utilization_synth.rpt -pb d_trigger_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 639.824 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Sep 23 19:00:06 2024...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 637.938 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 24 13:11:39 2024...

@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"encoder_tb_func_synth.vhd" \
+"../../../../../project_1.srcs/sources_1/new/standard_encoder.vhd" \
+"../../../../../project_1.srcs/sim_1/new/encoder_tb.vhd" \
+
+# Do not sort compile order
+nosort

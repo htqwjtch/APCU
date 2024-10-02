@@ -79,10 +79,10 @@ COMPONENT sn74ls697
     signal yc: std_logic;
     signal yd: std_logic;
     signal rcob: std_logic;
-    
+        
 begin
     --Instantiate the Unit Under Test (UUT)
-    uut: sn74ls697 PORT MAP(
+    behav: entity work.sn74ls697(Behavioral) PORT MAP(
         gb=>gb,
         r_cb=>r_cb, 
         rck=>rck,
@@ -107,27 +107,27 @@ begin
     --Stimmulis process
     stim_proc: process
     begin
-        --hold reset state for 100 ns.
+        --hold reset state for 10 ps.
         wait for 10 ps;
         
         --insert stimulus here
         for i_gb in 0 to 1 loop
             if i_gb = 0 then
                 gb <= '0';
-                enpb <= '0';
-                entb <= '0';
+                
             else 
                 gb <= '1';
-                enpb <= '1';
-                entb <= '1';
+                
             end if;
             for i_r_cb in 0 to 1 loop
                 if i_r_cb = 0 then
                     r_cb <= '0';
-                    
+                    enpb <= '0';
+                    entb <= '0';
                 else 
                     r_cb <= '1';
-                    
+                    enpb <= '1';
+                    entb <= '1';
                 end if;
                     for i_cclrb in 0 to 1 loop
                         if i_cclrb = 0 then
@@ -147,52 +147,49 @@ begin
                                 else 
                                     loadb <= '1';
                                 end if;
-                                
-                                        for i_xd in 0 to 1 loop
-                                            if i_xd = 0 then
-                                                xd <= '0';
+                                for i_xd in 0 to 1 loop
+                                    if i_xd = 0 then
+                                        xd <= '0';
+                                    else 
+                                        xd <= '1';
+                                    end if;
+                                    for i_xc in 0 to 1 loop
+                                        if i_xc = 0 then
+                                            xc <= '0';
+                                        else 
+                                            xc <= '1';
+                                        end if;
+                                        for i_xb in 0 to 1 loop
+                                            if i_xb = 0 then
+                                                xb <= '0';
                                             else 
-                                                xd <= '1';
+                                                xb <= '1';
                                             end if;
-                                            for i_xc in 0 to 1 loop
-                                                if i_xc = 0 then
-                                                    xc <= '0';
+                                            for i_xa in 0 to 1 loop
+                                                if i_xa = 0 then
+                                                    xa <= '0';
                                                 else 
-                                                    xc <= '1';
+                                                    xa <= '1';
                                                 end if;
-                                                for i_xb in 0 to 1 loop
-                                                    if i_xb = 0 then
-                                                        xb <= '0';
+                                                for i_cck in 0 to 1 loop
+                                                    if i_cck = 0 then
+                                                        cck <= '0';
+                                                        rck <= '1';
                                                     else 
-                                                        xb <= '1';
+                                                        cck <= '1';
+                                                        rck <='0';
                                                     end if;
-                                                    for i_xa in 0 to 1 loop
-                                                        if i_xa = 0 then
-                                                            xa <= '0';
-                                                        else 
-                                                            xa <= '1';
-                                                        end if;
-                                                        for i_cck in 0 to 1 loop
-                                                            if i_cck = 0 then
-                                                                cck <= '0';
-                                                                rck <= '1';
-                                                            else 
-                                                                cck <= '1';
-                                                                rck <='0';
-                                                            end if;
-                                                            wait for 10 ps;
-                                                        end loop;
-                                                    end loop;
+                                                    wait for 10 ps;
                                                 end loop;
                                             end loop;
+                                        end loop;
+                                    end loop;
                                 end loop;
                             end loop;
+                        end loop;
                     end loop;
-                end loop;
             end loop;
         end loop;
         wait;
     end process;
-
-
 end Behavioral;

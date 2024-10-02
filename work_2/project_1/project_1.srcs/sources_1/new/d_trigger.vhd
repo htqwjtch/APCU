@@ -60,19 +60,21 @@ architecture Behavioral of d_trigger is
     
     signal not_d: std_logic;
     signal not_clkb: std_logic;
+    signal q_jk: std_logic;
+    signal qb_jk: std_logic;
     
 begin
-    not_d<=not d;
-    not_clkb<=not clkb;
-    d_tr: jk_trigger Port Map (
-        sb=>sb,
-        j=>d,
-        k=>not_d,
-        clk=>not_clkb,
-        rb=>rb,
-        q=>q,
-        qb=>qb 
-    );
+        not_d<=not d;
+        not_clkb<=not clkb;
+        d_tr: jk_trigger Port Map (
+            sb=>sb,
+            j=>d,
+            k=>not_d,
+            clk=>not_clkb,
+            rb=>rb,
+            q=>q,
+            qb=>qb 
+        );
     process(clkb, sb, rb)
         variable tmp: std_logic;
     begin 

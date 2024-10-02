@@ -31,7 +31,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity encoder_d is
+entity encoder is
     Port ( E1 : in STD_LOGIC;
            X0 : in STD_LOGIC;
            X1 : in STD_LOGIC;
@@ -46,9 +46,9 @@ entity encoder_d is
            Y0 : out STD_LOGIC;
            Y1 : out STD_LOGIC;
            Y2 : out STD_LOGIC);
-end encoder_d;
+end encoder;
 
-architecture logic_operators of encoder_d is
+architecture Behavioral of encoder is
     signal and_not_0: std_logic;
     
     signal and_0: std_logic;
@@ -96,4 +96,90 @@ begin
     
     Y2 <= 'Z' when and_0='0' else not (and_9 or and_10 or and_11 or and_12);
 
-end logic_operators;
+end Behavioral;
+
+architecture Standard of encoder is
+
+begin
+    process(E1, X0, X1, X2, X3, X4, X5, X6, X7)
+    begin
+        if E1 = '0' then
+            if X7 = '1' then
+                if X6 = '1' then
+                    if X5 = '1' then
+                        if X4 = '1' then
+                            if X3 = '1' then
+                                if X2 = '1' then
+                                    if X1 = '1' then
+                                        if X0 = '1' then
+                                            EO <= '0';
+                                            GS <= '1';
+                                            Y0 <= 'Z';
+                                            Y1 <= 'Z';
+                                            Y2 <= 'Z';
+                                        elsif X0 = '0' then
+                                            EO <= '1';
+                                            GS <= '0';
+                                            Y0 <= '1';
+                                            Y1 <= '1';
+                                            Y2 <= '1';
+                                        end if;
+                                    elsif X1 = '0' then
+                                        EO <= '1';
+                                        GS <= '0';
+                                        Y0 <= '0';
+                                        Y1 <= '1';
+                                        Y2 <= '1';
+                                    end if;
+                                elsif X2 = '0' then
+                                    EO <= '1';
+                                    GS <= '0';
+                                    Y0 <= '1';
+                                    Y1 <= '0';
+                                    Y2 <= '1';
+                                end if;
+                            elsif X3 = '0' then
+                                EO <= '1';
+                                GS <= '0';
+                                Y0 <= '0';
+                                Y1 <= '0';
+                                Y2 <= '1';
+                            end if;
+                        elsif X4 = '0' then
+                            EO <= '1';
+                            GS <= '0';
+                            Y0 <= '1';
+                            Y1 <= '1';
+                            Y2 <= '0'; 
+                        end if;
+                    elsif X5 = '0' then
+                        EO <= '1';
+                        GS <= '0';
+                        Y0 <= '0';
+                        Y1 <= '1';
+                        Y2 <= '0'; 
+                    end if;
+                elsif X6 = '0' then
+                    EO <= '1';
+                    GS <= '0';
+                    Y0 <= '1';
+                    Y1 <= '0';
+                    Y2 <= '0'; 
+                end if;
+            elsif X7 = '0' then
+                EO <= '1';
+                GS <= '0';
+                Y0 <= '0';
+                Y1 <= '0';
+                Y2 <= '0';  
+            end if;
+        elsif E1 = '1' then                            
+            EO <= '1';
+            GS <= '1';
+            Y0 <= 'Z';
+            Y1 <= 'Z';
+            Y2 <= 'Z';
+        end if;                 
+    end process;
+
+end Standard;

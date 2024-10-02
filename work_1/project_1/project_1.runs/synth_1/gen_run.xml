@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1726905458">
-  <File Type="PA-TCL" Name="encoder_d.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="encoder_d_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="encoder_d_reports.tcl"/>
-  <File Type="RDS-RDS" Name="encoder_d.vds"/>
-  <File Type="RDS-UTIL" Name="encoder_d_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="encoder_d_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="encoder_d.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="encoder_d_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="encoder_d_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1727369079">
+  <File Type="PA-TCL" Name="encoder.tcl"/>
+  <File Type="REPORTS-TCL" Name="encoder_reports.tcl"/>
+  <File Type="RDS-RDS" Name="encoder.vds"/>
+  <File Type="RDS-UTIL" Name="encoder_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="encoder_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="encoder.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/encoder_d.vhd">
@@ -19,7 +16,9 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="encoder_d"/>
+      <Option Name="TopModule" Val="encoder"/>
+      <Option Name="TopLib" Val="xil_defaultlib"/>
+      <Option Name="TopArchitecture" Val="Behavioral"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>

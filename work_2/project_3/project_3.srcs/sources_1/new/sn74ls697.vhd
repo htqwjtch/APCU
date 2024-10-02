@@ -32,7 +32,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity sn74ls697 is
-Port ( gb : in STD_LOGIC;
+Port ( 
+       gb : in STD_LOGIC;
        r_cb : in STD_LOGIC;
        rck : in STD_LOGIC;
        cclrb : in STD_LOGIC;
@@ -116,7 +117,7 @@ architecture Behavioral of sn74ls697 is
     
     signal and_not: std_logic;
     
-    signal zero: std_logic:='Z';
+    signal zero: std_logic:='1';
     signal clkb1: std_logic;
     signal clkb2: std_logic;
     

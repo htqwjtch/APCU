@@ -30,7 +30,6 @@ set_property ip_output_repo c:/Users/htqwj/APCU/work_2/project_3/project_3.cache
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
   C:/Users/htqwj/APCU/work_2/project_1/project_1.srcs/sources_1/new/d_trigger.vhd
-  C:/Users/htqwj/APCU/work_2/project_2/project_2.srcs/sources_1/new/dd_trigger.vhd
   C:/Users/htqwj/APCU/work_2/project_3/project_3.srcs/sources_1/new/sn74ls697.vhd
 }
 # Mark all dcp files as not used in implementation to prevent them from being

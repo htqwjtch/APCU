@@ -46,35 +46,35 @@ entity d_trigger is
 end d_trigger;
 
 architecture Behavioral of d_trigger is
-   Component jk_trigger 
-   Port( 
-        sb: in std_logic;
-        j: in std_logic;
-        clk: in std_logic;
-        k: in std_logic;
-        rb: in std_logic;
-        q: out std_logic;
-        qb: out std_logic
-      );
-    end Component;
+--   Component jk_trigger 
+--   Port( 
+--        sb: in std_logic;
+--        j: in std_logic;
+--        clk: in std_logic;
+--        k: in std_logic;
+--        rb: in std_logic;
+--        q: out std_logic;
+--        qb: out std_logic
+--      );
+--    end Component;
     
-    signal not_d: std_logic;
-    signal not_clkb: std_logic;
-    signal q_jk: std_logic;
-    signal qb_jk: std_logic;
+--    signal not_d: std_logic;
+--    signal not_clkb: std_logic;
+--    signal q_jk: std_logic;
+--    signal qb_jk: std_logic;
     
 begin
-        not_d<=not d;
-        not_clkb<=not clkb;
-        d_tr: jk_trigger Port Map (
-            sb=>sb,
-            j=>d,
-            k=>not_d,
-            clk=>not_clkb,
-            rb=>rb,
-            q=>q,
-            qb=>qb 
-        );
+--        not_d<=not d;
+--        not_clkb<=not clkb;
+--        d_tr: jk_trigger Port Map (
+--            sb=>sb,
+--            j=>d,
+--            k=>not_d,
+--            clk=>not_clkb,
+--            rb=>rb,
+--            q=>q,
+--            qb=>qb 
+--        );
     process(clkb, sb, rb)
         variable tmp: std_logic;
     begin 

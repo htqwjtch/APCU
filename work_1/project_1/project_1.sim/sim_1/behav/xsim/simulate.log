@@ -1,2 +1,28 @@
 Vivado Simulator 2018.2
 Time resolution is 1 ps
+Note: Error: Y0 outputs are not equal!
+Time: 170 ps  Iteration: 0  Process: /encoder_tb/check_process  File: C:/Users/htqwj/APCU/work_1/project_1/project_1.srcs/sim_1/new/encoder_tb.vhd
+Note: Error: Y1 outputs are not equal!
+Time: 490 ps  Iteration: 0  Process: /encoder_tb/check_process  File: C:/Users/htqwj/APCU/work_1/project_1/project_1.srcs/sim_1/new/encoder_tb.vhd
+Note: Error: Y0 outputs are not equal!
+Time: 810 ps  Iteration: 0  Process: /encoder_tb/check_process  File: C:/Users/htqwj/APCU/work_1/project_1/project_1.srcs/sim_1/new/encoder_tb.vhd
+Note: Error: Y0 outputs are not equal!
+Time: 1130 ps  Iteration: 0  Process: /encoder_tb/check_process  File: C:/Users/htqwj/APCU/work_1/project_1/project_1.srcs/sim_1/new/encoder_tb.vhd
+Note: Error: Y1 outputs are not equal!
+Time: 1130 ps  Iteration: 0  Process: /encoder_tb/check_process  File: C:/Users/htqwj/APCU/work_1/project_1/project_1.srcs/sim_1/new/encoder_tb.vhd
+Note: Error: Y0 outputs are not equal!
+Time: 1450 ps  Iteration: 0  Process: /encoder_tb/check_process  File: C:/Users/htqwj/APCU/work_1/project_1/project_1.srcs/sim_1/new/encoder_tb.vhd
+Note: Error: Y1 outputs are not equal!
+Time: 1770 ps  Iteration: 0  Process: /encoder_tb/check_process  File: C:/Users/htqwj/APCU/work_1/project_1/project_1.srcs/sim_1/new/encoder_tb.vhd
+Note: Error: Y0 outputs are not equal!
+Time: 2090 ps  Iteration: 0  Process: /encoder_tb/check_process  File: C:/Users/htqwj/APCU/work_1/project_1/project_1.srcs/sim_1/new/encoder_tb.vhd
+Note: Error: EO outputs are not equal!
+Time: 2410 ps  Iteration: 0  Process: /encoder_tb/check_process  File: C:/Users/htqwj/APCU/work_1/project_1/project_1.srcs/sim_1/new/encoder_tb.vhd
+Note: Error: GS outputs are not equal!
+Time: 2410 ps  Iteration: 0  Process: /encoder_tb/check_process  File: C:/Users/htqwj/APCU/work_1/project_1/project_1.srcs/sim_1/new/encoder_tb.vhd
+Note: Error: Y0 outputs are not equal!
+Time: 2410 ps  Iteration: 0  Process: /encoder_tb/check_process  File: C:/Users/htqwj/APCU/work_1/project_1/project_1.srcs/sim_1/new/encoder_tb.vhd
+Note: Error: Y1 outputs are not equal!
+Time: 2410 ps  Iteration: 0  Process: /encoder_tb/check_process  File: C:/Users/htqwj/APCU/work_1/project_1/project_1.srcs/sim_1/new/encoder_tb.vhd
+Note: Error: Y2 outputs are not equal!
+Time: 2410 ps  Iteration: 0  Process: /encoder_tb/check_process  File: C:/Users/htqwj/APCU/work_1/project_1/project_1.srcs/sim_1/new/encoder_tb.vhd

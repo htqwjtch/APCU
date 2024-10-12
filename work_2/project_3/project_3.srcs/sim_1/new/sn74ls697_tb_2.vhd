@@ -81,6 +81,8 @@ COMPONENT sn74ls697
     signal yc_b: std_logic;
     signal yd_b: std_logic;
     signal rcob_b: std_logic;
+    
+    signal success_tests: std_logic:='1';
         
 begin
     --Instantiate the Unit Under Test (UUT)
@@ -112,7 +114,6 @@ begin
           variable line_buffer : line;
           variable input_vector : std_logic_vector(0 to 17); -- 13 inputs + 5 outputs
        begin
-           wait for 10 ps;
            file_open(test_vectors, "C:\Users\htqwj\APCU\work_2\project_3\test_vectors.txt", read_mode);
            
            -- Reading lines from the file
@@ -153,26 +154,36 @@ begin
                cck<=input_vector(12);
                       
                wait for 10 ps;  -- Wait for output stabilization
-               
+
                -- Checking results
                if ya_b /= input_vector(13) then
+                   success_tests<='0';
                    report "Error: ya does not match!";
                end if;
                if yb_b /= input_vector(14) then
+                   success_tests<='0';
                    report "Error: yb does not match!";
                end if;
                if yc_b /= input_vector(15) then
+                   success_tests<='0';
                    report "Error: yc does not match!";
                end if;
                if yd_b /= input_vector(16) then
+                   success_tests<='0';
                    report "Error: yd does not match!";
                end if;
                if rcob_b /= input_vector(17) then
+                   success_tests<='0';
                    report "Error: rcob does not match!";
                end if;
            end loop;
-           
+
+           if success_tests = '1' then
+              report "All tests have been SUCCESSFULLY completed!!!";  
+           end if;
+
            file_close(test_vectors);
            wait;  -- Wait for completion
        end process;
+       
 end Behavioral;

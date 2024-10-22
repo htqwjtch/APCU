@@ -1,0 +1,346 @@
+
+*** Running vivado
+    with args -log artix.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source artix.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source artix.tcl -notrace
+Command: synth_design -top artix -part xc7a200tfbg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4572 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 356.789 ; gain = 99.672
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'artix' [D:/4/APCU/4lab/artix/artix.srcs/sources_1/new/artix.vhd:45]
+INFO: [Synth 8-3491] module 'shift' declared at 'D:/4/APCU/2lab/shift_2/shift_2.srcs/sources_1/new/shift.vhd:34' bound to instance 'shift_uut' of component 'shift' [D:/4/APCU/4lab/artix/artix.srcs/sources_1/new/artix.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'shift' [D:/4/APCU/2lab/shift_2/shift_2.srcs/sources_1/new/shift.vhd:47]
+INFO: [Synth 8-3491] module 'mux' declared at 'D:/4/APCU/2lab/mux/mux.srcs/sources_1/new/mux.vhd:34' bound to instance 'mux0' of component 'mux' [D:/4/APCU/2lab/shift_2/shift_2.srcs/sources_1/new/shift.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'mux' [D:/4/APCU/2lab/mux/mux.srcs/sources_1/new/mux.vhd:42]
+INFO: [Synth 8-226] default block is never used [D:/4/APCU/2lab/mux/mux.srcs/sources_1/new/mux.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'mux' (1#1) [D:/4/APCU/2lab/mux/mux.srcs/sources_1/new/mux.vhd:42]
+INFO: [Synth 8-3491] module 'mux' declared at 'D:/4/APCU/2lab/mux/mux.srcs/sources_1/new/mux.vhd:34' bound to instance 'mux1' of component 'mux' [D:/4/APCU/2lab/shift_2/shift_2.srcs/sources_1/new/shift.vhd:106]
+INFO: [Synth 8-3491] module 'mux' declared at 'D:/4/APCU/2lab/mux/mux.srcs/sources_1/new/mux.vhd:34' bound to instance 'mux2' of component 'mux' [D:/4/APCU/2lab/shift_2/shift_2.srcs/sources_1/new/shift.vhd:114]
+INFO: [Synth 8-3491] module 'mux' declared at 'D:/4/APCU/2lab/mux/mux.srcs/sources_1/new/mux.vhd:34' bound to instance 'mux3' of component 'mux' [D:/4/APCU/2lab/shift_2/shift_2.srcs/sources_1/new/shift.vhd:122]
+INFO: [Synth 8-3491] module 'd_trigger' declared at 'D:/4/APCU/2lab/d_trigger/d_trigger.srcs/sources_1/new/d_trigger.vhd:34' bound to instance 'd0' of component 'd_trigger' [D:/4/APCU/2lab/shift_2/shift_2.srcs/sources_1/new/shift.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'd_trigger' [D:/4/APCU/2lab/d_trigger/d_trigger.srcs/sources_1/new/d_trigger.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'd_trigger' (2#1) [D:/4/APCU/2lab/d_trigger/d_trigger.srcs/sources_1/new/d_trigger.vhd:43]
+INFO: [Synth 8-3491] module 'd_trigger' declared at 'D:/4/APCU/2lab/d_trigger/d_trigger.srcs/sources_1/new/d_trigger.vhd:34' bound to instance 'd1' of component 'd_trigger' [D:/4/APCU/2lab/shift_2/shift_2.srcs/sources_1/new/shift.vhd:137]
+INFO: [Synth 8-3491] module 'd_trigger' declared at 'D:/4/APCU/2lab/d_trigger/d_trigger.srcs/sources_1/new/d_trigger.vhd:34' bound to instance 'd2' of component 'd_trigger' [D:/4/APCU/2lab/shift_2/shift_2.srcs/sources_1/new/shift.vhd:144]
+INFO: [Synth 8-3491] module 'd_trigger' declared at 'D:/4/APCU/2lab/d_trigger/d_trigger.srcs/sources_1/new/d_trigger.vhd:34' bound to instance 'd3' of component 'd_trigger' [D:/4/APCU/2lab/shift_2/shift_2.srcs/sources_1/new/shift.vhd:151]
+INFO: [Synth 8-256] done synthesizing module 'shift' (3#1) [D:/4/APCU/2lab/shift_2/shift_2.srcs/sources_1/new/shift.vhd:47]
+INFO: [Synth 8-3491] module 'IBUFDS' declared at 'D:/ViVaDo/Vivado/2018.2/scripts/rt/data/unisim_comp.v:19488' bound to instance 'buff' of component 'ibufds' [D:/4/APCU/4lab/artix/artix.srcs/sources_1/new/artix.vhd:96]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [D:/ViVaDo/Vivado/2018.2/scripts/rt/data/unisim_comp.v:19488]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (4#1) [D:/ViVaDo/Vivado/2018.2/scripts/rt/data/unisim_comp.v:19488]
+INFO: [Synth 8-3491] module 'clk_div' declared at 'C:/Users/HP/Downloads/Telegram Desktop/clk_div.vhd:4' bound to instance 'divider_uut' of component 'clk_div' [D:/4/APCU/4lab/artix/artix.srcs/sources_1/new/artix.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'clk_div' [C:/Users/HP/Downloads/Telegram Desktop/clk_div.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'clk_div' (5#1) [C:/Users/HP/Downloads/Telegram Desktop/clk_div.vhd:9]
+WARNING: [Synth 8-3848] Net ledsboard in module/entity artix does not have driver. [D:/4/APCU/4lab/artix/artix.srcs/sources_1/new/artix.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'artix' (6#1) [D:/4/APCU/4lab/artix/artix.srcs/sources_1/new/artix.vhd:45]
+WARNING: [Synth 8-3331] design artix has unconnected port ledsboard[3]
+WARNING: [Synth 8-3331] design artix has unconnected port ledsboard[2]
+WARNING: [Synth 8-3331] design artix has unconnected port ledsboard[1]
+WARNING: [Synth 8-3331] design artix has unconnected port ledsboard[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 411.934 ; gain = 154.816
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 411.934 ; gain = 154.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 411.934 ; gain = 154.816
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/HP/Downloads/Telegram Desktop/top.xdc]
+Finished Parsing XDC File [C:/Users/HP/Downloads/Telegram Desktop/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/HP/Downloads/Telegram Desktop/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/artix_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/artix_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 747.762 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 747.762 ; gain = 490.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 747.762 ; gain = 490.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 747.762 ; gain = 490.645
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "i" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "temp_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 747.762 ; gain = 490.645
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module mux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 1     
+Module d_trigger 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module clk_div 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "divider_uut/i" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "divider_uut/temp_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design artix has unconnected port ledsboard[3]
+WARNING: [Synth 8-3331] design artix has unconnected port ledsboard[2]
+WARNING: [Synth 8-3331] design artix has unconnected port ledsboard[1]
+WARNING: [Synth 8-3331] design artix has unconnected port ledsboard[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 747.762 ; gain = 490.645
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 784.062 ; gain = 526.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 784.211 ; gain = 527.094
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 794.250 ; gain = 537.133
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 794.250 ; gain = 537.133
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 794.250 ; gain = 537.133
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 794.250 ; gain = 537.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 794.250 ; gain = 537.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 794.250 ; gain = 537.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 794.250 ; gain = 537.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     8|
+|3     |LUT1   |     1|
+|4     |LUT4   |     7|
+|5     |LUT5   |     3|
+|6     |LUT6   |     5|
+|7     |FDCE   |     4|
+|8     |FDRE   |    33|
+|9     |IBUF   |     9|
+|10    |IBUFDS |     1|
+|11    |OBUF   |     4|
+|12    |OBUFT  |     4|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------+------------+------+
+|      |Instance      |Module      |Cells |
++------+--------------+------------+------+
+|1     |top           |            |    80|
+|2     |  divider_uut |clk_div     |    52|
+|3     |  shift_uut   |shift       |     9|
+|4     |    mux0      |mux         |     1|
+|5     |    mux1      |mux_3       |     1|
+|6     |    mux2      |mux_4       |     1|
+|7     |    mux3      |mux_5       |     1|
+|8     |    d0        |d_trigger   |     1|
+|9     |    d1        |d_trigger_0 |     2|
+|10    |    d2        |d_trigger_1 |     1|
+|11    |    d3        |d_trigger_2 |     1|
++------+--------------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 794.250 ; gain = 537.133
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 794.250 ; gain = 201.305
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 794.250 ; gain = 537.133
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+42 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 807.598 ; gain = 563.336
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/4/APCU/4lab/artix/artix.runs/synth_1/artix.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file artix_utilization_synth.rpt -pb artix_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.088 . Memory (MB): peak = 807.598 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 22 10:49:13 2024...

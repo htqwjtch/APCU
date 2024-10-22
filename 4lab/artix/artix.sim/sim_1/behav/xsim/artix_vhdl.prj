@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"C:/Users/HP/Downloads/Telegram Desktop/clk_div.vhd" \
+"../../../../../../2lab/d_trigger/d_trigger.srcs/sources_1/new/d_trigger.vhd" \
+"../../../../../../2lab/mux/mux.srcs/sources_1/new/mux.vhd" \
+"../../../../../../2lab/shift_2/shift_2.srcs/sources_1/new/shift.vhd" \
+"../../../../artix.srcs/sources_1/new/artix.vhd" \
+
+# Do not sort compile order
+nosort

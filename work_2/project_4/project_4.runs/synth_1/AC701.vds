@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Tue Oct 22 23:54:44 2024
-# Process ID: 3400
+# Start of session at: Wed Oct 23 11:22:52 2024
+# Process ID: 4392
 # Current directory: C:/Users/htqwj/APCU/work_2/project_4/project_4.runs/synth_1
 # Command line: vivado.exe -log AC701.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source AC701.tcl
 # Log file: C:/Users/htqwj/APCU/work_2/project_4/project_4.runs/synth_1/AC701.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 2416 
+INFO: Helper process launched with PID 7676 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 356.656 ; gain = 100.086
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 355.430 ; gain = 98.836
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'AC701' [C:/Users/htqwj/APCU/work_2/project_4/project_4.srcs/sources_1/new/AC701.vhd:45]
 INFO: [Synth 8-3491] module 'sn74ls697' declared at 'C:/Users/htqwj/APCU/work_2/project_3/project_3.srcs/sources_1/new/sn74ls697.vhd:34' bound to instance 'counter' of component 'sn74ls697' [C:/Users/htqwj/APCU/work_2/project_4/project_4.srcs/sources_1/new/AC701.vhd:92]
@@ -44,9 +44,12 @@ INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [C:/Xilinx/Vivado/2018.2/scrip
 	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
 INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (3#1) [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:19488]
-INFO: [Synth 8-256] done synthesizing module 'AC701' (4#1) [C:/Users/htqwj/APCU/work_2/project_4/project_4.srcs/sources_1/new/AC701.vhd:45]
+INFO: [Synth 8-3491] module 'clk_div' declared at 'C:/Users/htqwj/APCU/work_2/project_4/project_4.srcs/sources_1/new/clk_div.vhd:4' bound to instance 'divider_uut' of component 'clk_div' [C:/Users/htqwj/APCU/work_2/project_4/project_4.srcs/sources_1/new/AC701.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'clk_div' [C:/Users/htqwj/APCU/work_2/project_4/project_4.srcs/sources_1/new/clk_div.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'clk_div' (4#1) [C:/Users/htqwj/APCU/work_2/project_4/project_4.srcs/sources_1/new/clk_div.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'AC701' (5#1) [C:/Users/htqwj/APCU/work_2/project_4/project_4.srcs/sources_1/new/AC701.vhd:45]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 411.336 ; gain = 154.766
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 410.555 ; gain = 153.961
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -59,10 +62,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 411.336 ; gain = 154.766
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 410.555 ; gain = 153.961
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 411.336 ; gain = 154.766
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 410.555 ; gain = 153.961
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -72,36 +75,6 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [C:/Users/htqwj/APCU/work_2/project_4/project_4.srcs/constrs_1/new/constaints.xdc]
-WARNING: [Vivado 12-584] No ports matched 'rotarysw[0]'. [C:/Users/htqwj/APCU/work_2/project_4/project_4.srcs/constrs_1/new/constaints.xdc:50]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/htqwj/APCU/work_2/project_4/project_4.srcs/constrs_1/new/constaints.xdc:50]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'rotarysw[0]'. [C:/Users/htqwj/APCU/work_2/project_4/project_4.srcs/constrs_1/new/constaints.xdc:51]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/htqwj/APCU/work_2/project_4/project_4.srcs/constrs_1/new/constaints.xdc:51]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'rotarysw[1]'. [C:/Users/htqwj/APCU/work_2/project_4/project_4.srcs/constrs_1/new/constaints.xdc:52]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/htqwj/APCU/work_2/project_4/project_4.srcs/constrs_1/new/constaints.xdc:52]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'rotarysw[1]'. [C:/Users/htqwj/APCU/work_2/project_4/project_4.srcs/constrs_1/new/constaints.xdc:53]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/htqwj/APCU/work_2/project_4/project_4.srcs/constrs_1/new/constaints.xdc:53]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'rotarysw[2]'. [C:/Users/htqwj/APCU/work_2/project_4/project_4.srcs/constrs_1/new/constaints.xdc:54]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/htqwj/APCU/work_2/project_4/project_4.srcs/constrs_1/new/constaints.xdc:54]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'rotarysw[2]'. [C:/Users/htqwj/APCU/work_2/project_4/project_4.srcs/constrs_1/new/constaints.xdc:55]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/htqwj/APCU/work_2/project_4/project_4.srcs/constrs_1/new/constaints.xdc:55]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'uart_tx'. [C:/Users/htqwj/APCU/work_2/project_4/project_4.srcs/constrs_1/new/constaints.xdc:58]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/htqwj/APCU/work_2/project_4/project_4.srcs/constrs_1/new/constaints.xdc:58]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'uart_tx'. [C:/Users/htqwj/APCU/work_2/project_4/project_4.srcs/constrs_1/new/constaints.xdc:59]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/htqwj/APCU/work_2/project_4/project_4.srcs/constrs_1/new/constaints.xdc:59]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'uart_rx'. [C:/Users/htqwj/APCU/work_2/project_4/project_4.srcs/constrs_1/new/constaints.xdc:60]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/htqwj/APCU/work_2/project_4/project_4.srcs/constrs_1/new/constaints.xdc:60]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'uart_rx'. [C:/Users/htqwj/APCU/work_2/project_4/project_4.srcs/constrs_1/new/constaints.xdc:61]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/htqwj/APCU/work_2/project_4/project_4.srcs/constrs_1/new/constaints.xdc:61]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 Finished Parsing XDC File [C:/Users/htqwj/APCU/work_2/project_4/project_4.srcs/constrs_1/new/constaints.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/htqwj/APCU/work_2/project_4/project_4.srcs/constrs_1/new/constaints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/AC701_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/AC701_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
@@ -110,25 +83,27 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 733.934 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 709.375 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 733.934 ; gain = 477.363
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 709.375 ; gain = 452.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k70tfbv676-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 733.934 ; gain = 477.363
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 709.375 ; gain = 452.781
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 733.934 ; gain = 477.363
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 709.375 ; gain = 452.781
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "i" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "temp_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 733.934 ; gain = 477.363
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 709.375 ; gain = 452.781
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -140,8 +115,14 @@ Report RTL Partitions:
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
 +---Registers : 
-	                1 Bit    Registers := 8     
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -153,6 +134,16 @@ Module d_trigger
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
+Module clk_div 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -169,8 +160,10 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "divider_uut/i" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "divider_uut/temp_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 733.934 ; gain = 477.363
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 709.375 ; gain = 452.781
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -182,13 +175,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 733.934 ; gain = 477.363
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 730.246 ; gain = 473.652
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 733.934 ; gain = 477.363
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 730.395 ; gain = 473.801
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -200,7 +193,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 743.031 ; gain = 486.461
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 739.961 ; gain = 483.367
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -224,7 +217,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 743.031 ; gain = 486.461
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 739.961 ; gain = 483.367
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -237,7 +230,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 743.031 ; gain = 486.461
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 739.961 ; gain = 483.367
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -249,25 +242,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 743.031 ; gain = 486.461
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 739.961 ; gain = 483.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 743.031 ; gain = 486.461
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 739.961 ; gain = 483.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 743.031 ; gain = 486.461
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 739.961 ; gain = 483.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 743.031 ; gain = 486.461
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 739.961 ; gain = 483.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -284,41 +277,44 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     1|
-|2     |LUT1   |     2|
-|3     |LUT3   |     6|
-|4     |LUT5   |     3|
-|5     |LUT6   |     1|
-|6     |FDCE   |     4|
-|7     |FDRE   |     4|
-|8     |IBUF   |     9|
-|9     |IBUFDS |     1|
-|10    |OBUF   |     1|
-|11    |OBUFT  |     4|
+|2     |CARRY4 |     8|
+|3     |LUT1   |     2|
+|4     |LUT3   |     6|
+|5     |LUT4   |     7|
+|6     |LUT5   |     6|
+|7     |LUT6   |     2|
+|8     |FDCE   |     4|
+|9     |FDRE   |    37|
+|10    |IBUF   |     9|
+|11    |IBUFDS |     1|
+|12    |OBUF   |     1|
+|13    |OBUFT  |     4|
 +------+-------+------+
 
 Report Instance Areas: 
-+------+----------+------------+------+
-|      |Instance  |Module      |Cells |
-+------+----------+------------+------+
-|1     |top       |            |    36|
-|2     |  counter |sn74ls697   |    19|
-|3     |    c1    |d_trigger   |     4|
-|4     |    c2    |d_trigger_0 |     2|
-|5     |    c3    |d_trigger_1 |     1|
-|6     |    c4    |d_trigger_2 |     4|
-|7     |    r1    |d_trigger_3 |     2|
-|8     |    r2    |d_trigger_4 |     2|
-|9     |    r3    |d_trigger_5 |     2|
-|10    |    r4    |d_trigger_6 |     2|
-+------+----------+------------+------+
++------+--------------+------------+------+
+|      |Instance      |Module      |Cells |
++------+--------------+------------+------+
+|1     |top           |            |    88|
+|2     |  counter     |sn74ls697   |    19|
+|3     |    c1        |d_trigger   |     4|
+|4     |    c2        |d_trigger_0 |     2|
+|5     |    c3        |d_trigger_1 |     1|
+|6     |    c4        |d_trigger_2 |     4|
+|7     |    r1        |d_trigger_3 |     2|
+|8     |    r2        |d_trigger_4 |     2|
+|9     |    r3        |d_trigger_5 |     2|
+|10    |    r4        |d_trigger_6 |     2|
+|11    |  divider_uut |clk_div     |    52|
++------+--------------+------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 743.031 ; gain = 486.461
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 739.961 ; gain = 483.367
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 743.031 ; gain = 163.863
-Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 743.031 ; gain = 486.461
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 739.961 ; gain = 184.547
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 739.961 ; gain = 483.367
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -326,11 +322,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-33 Infos, 10 Warnings, 10 Critical Warnings and 0 Errors encountered.
+40 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 755.277 ; gain = 511.750
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 754.418 ; gain = 510.727
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/htqwj/APCU/work_2/project_4/project_4.runs/synth_1/AC701.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file AC701_utilization_synth.rpt -pb AC701_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 755.277 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Oct 22 23:55:20 2024...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 754.418 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 23 11:23:30 2024...

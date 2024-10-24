@@ -1,0 +1,4 @@
+Running: xsim.dir/sn74ls697_tb_2_behav/xsimk.exe -simmode gui -wdb sn74ls697_tb_2_behav.wdb -simrunnum 0 -socket 49673
+Design successfully loaded
+Design Loading Memory Usage: 6152 KB (Peak: 6152 KB)
+Design Loading CPU Usage: 15 ms

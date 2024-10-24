@@ -81,9 +81,9 @@ architecture Behavioral of AC701 is
     signal zero: std_logic := '0';
     
     signal clk_no_div: std_logic;
-    signal rck_no_div: std_logic;
---    signal clk_divided: std_logic;
---    signal rck_divided: std_logic;
+--    signal rck_no_div: std_logic;
+    signal clk_divided: std_logic;
+    signal rck_divided: std_logic;
     
     
     signal outputs: std_logic_vector(3 downto 0);
@@ -97,11 +97,11 @@ begin
         loadb => dipswitch(3),
         
         
---        cck => clk_divided,
---        rck => rck_divided,
+        cck => clk_divided,
+        rck => rck_divided,
 
-        cck => clk_no_div,
-        rck => rck_no_div,
+--        cck => clk_no_div,
+--        rck => rck_no_div,
         
         enpb => zero,
         entb => zero,
@@ -127,15 +127,15 @@ begin
         O => clk_no_div
     );
     
---    divider_uut: clk_div
---    Port Map (
---        clk_in => clk_no_div,
---        clk_out => clk_divided
---    );
+    divider_uut: clk_div
+    Port Map (
+        clk_in => clk_no_div,
+        clk_out => clk_divided
+    );
     
---    rck_divided <= not clk_divided; 
+    rck_divided <= not clk_divided; 
     
-    rck_no_div <= not clk_no_div; 
+--    rck_no_div <= not clk_no_div; 
     
     ledsmain <= outputs;
 

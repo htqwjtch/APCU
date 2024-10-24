@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1729630482">
+<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1729671767">
   <File Type="PA-TCL" Name="AC701.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="AC701_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="AC701_reports.tcl"/>
@@ -11,6 +11,12 @@
   <File Type="VDS-TIMING-PB" Name="AC701_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/clk_div.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PPRDIR/../project_1/project_1.srcs/sources_1/new/d_trigger.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>

@@ -29,6 +29,7 @@ set_property target_language VHDL [current_project]
 set_property ip_output_repo c:/Users/htqwj/APCU/work_2/project_4/project_4.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
+  C:/Users/htqwj/APCU/work_2/project_4/project_4.srcs/sources_1/new/clk_div.vhd
   C:/Users/htqwj/APCU/work_2/project_1/project_1.srcs/sources_1/new/d_trigger.vhd
   C:/Users/htqwj/APCU/work_2/project_3/project_3.srcs/sources_1/new/sn74ls697.vhd
   C:/Users/htqwj/APCU/work_2/project_4/project_4.srcs/sources_1/new/AC701.vhd

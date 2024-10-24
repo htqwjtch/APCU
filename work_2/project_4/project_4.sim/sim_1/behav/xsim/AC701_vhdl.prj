@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../project_1/project_1.srcs/sources_1/new/d_trigger.vhd" \
+"../../../../../project_3/project_3.srcs/sources_1/new/sn74ls697.vhd" \
+"../../../../project_4.srcs/sources_1/new/AC701.vhd" \
+
+# Do not sort compile order
+nosort
